@@ -1,0 +1,34 @@
+#program To count frequency of a perticular item, reverse the item of list and arreange the items in increasing order or decreasing order
+MAG = [1,22,44,333,222,333,11,66,66,22]
+while True:
+    print("Welcome")
+    print("To Count Frequency Of A Perticular Item Press 1 \nTo Reverse The Item Of List Press 2 \nTo arreange the items in increasing order or decreasing order Press 3 \nPress 4 To Exit")
+    print(MAG)
+    
+    cho = int(input("Enter Your Choice : "))
+
+    if cho == 1:
+        a = input("Enter the item whose frequency you want to count: ")
+        s = 0
+        for s in MAG:
+            if s == MAG:
+                s+= 1
+        print("The Frequency of",a,"is",s)
+
+    elif cho == 2:
+        print("The Reversed List Is")
+        print(MAG[::-1])
+    
+    elif cho == 3:
+        print(MAG)
+        MAG.sort(reverse = True)
+        print(MAG)
+        MAG.sort(reverse = False)
+        print(MAG)
+
+    elif cho == 4:
+        print("BYE BYE")
+        break
+
+    else:
+        print("Wrong Choice")
